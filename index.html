@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="md:text-[18px]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,38 +18,44 @@
         --BrightYellow: hsl(71, 73%, 54%);
         --LightGray: hsl(204, 43%, 93%);
         --GrayishBlue: hsl(218, 22%, 67%);
-        font-family: "Karla, sans-serif";
+        font-family: "Karla";
+        
       }
     </style>
   </head>
   <body>
-    <div class="layout flex">
-      <main class="m-auto w-[90%] mx-w-[700px]">
-        <section>
-          <h1>Join our community</h1>
-          <h2>30-day, hassle-free money back guarantee</h2>
-          <p>
+    <div class="layout flex h-dvh bg-[var(--LightGray)]">
+      <main class="m-auto w-[80%] max-w-3xl bg-white  rounded-md overflow-hidden flex flex-col flex-wrap md:flex-row">
+        <section class="p-6 basis-full space-y-4 md:py-20 md:px-10">
+          <h1 class="text-[--Cyan] font-bold text-xl drop-shadow-sm shadow-[#50d71e]	tracking-wide	">Join our community</h1>
+          <h2 class="text-[--BrightYellow] font-medium">
+            30-day, hassle-free money back guarantee
+          </h2>
+          <p class="opacity-50 font-medium text-base">
             Gain access to our full library of tutorials along with expert code
             reviews. Perfect for any developers who are serious about honing
             their skills
           </p>
         </section>
-        <section>
-          <h2>Monthly Subscription</h2>
+
+        <section class="p-6 bg-[var(--Cyan)] text-white space-y-4 md:flex-1 md:py-20 md:px-10">
+          <h2 class="text-xl opacity-90 tracking-wide">Monthly Subscription</h2>
           <div>
-            <span>&dollar;29</span>
-            <span>per month</span>
-            <p>Full access for less than &dollar;1 a day</p>
+            <span class="text-3xl font-bold align-middle">&dollar;29</span>
+            <span class="opacity-50 align-middle ml-2">per month</span>
+            <p class="opacity-80 mt-1">Full access for less than &dollar;1 a day</p>
           </div>
-          <button>Sign Up</button>
+          <button class="bg-[#c5de56] w-[95%] p-3 shadow-xl rounded-md	">Sign Up</button>
         </section>
 
-        <section>
-          <h2>Why Us</h2>
-          <p>
-            Tutorials by industry experts Peer &amp; expert code review Coding
-            exercises Access to our GitHub repos Community forum Flashcard decks
-            New videos every week
+        <section class="p-6 bg-[#4abebd] text-white space-y-4 md:flex-1 md:py-20  md:px-10">
+          <h2 class="text-xl font-bold tracking-wide">Why Us</h2>
+          <p class="opacity-75 text-sm leading-5 md:leading-6">
+            Tutorials by industry experts <br>
+            Peer &amp; expert code review <br>
+            Coding exercises Access to our GitHub <br>
+            Community forum Flashcard <br>
+            decks New videos every week <br>
           </p>
         </section>
       </main>
