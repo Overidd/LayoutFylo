@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="md:text-[18px]">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,12 +21,17 @@
         font-family: "Karla";
         
       }
+      @media screen and (min-width: 768px) {
+          *{
+            font-size: 19px;
+          }
+      }
     </style>
   </head>
   <body>
-    <div class="layout flex h-dvh bg-[var(--LightGray)]">
-      <main class="m-auto w-[80%] max-w-3xl bg-white  rounded-md overflow-hidden flex flex-col flex-wrap md:flex-row">
-        <section class="p-6 basis-full space-y-4 md:py-20 md:px-10">
+    <div class="layout flex min-h-dvh bg-[var(--LightGray)]">
+      <main class="m-auto w-[80%] max-w-3xl sm:max-w-2xl  bg-white  rounded-md overflow-hidden flex flex-col flex-wrap md:flex-row">
+        <section class="p-6 basis-full space-y-4 2xl:py-20 sm:py-12 md:px-10">
           <h1 class="text-[--Cyan] font-bold text-xl drop-shadow-sm shadow-[#50d71e]	tracking-wide	">Join our community</h1>
           <h2 class="text-[--BrightYellow] font-medium">
             30-day, hassle-free money back guarantee
@@ -38,7 +43,7 @@
           </p>
         </section>
 
-        <section class="p-6 bg-[var(--Cyan)] text-white space-y-4 md:flex-1 md:py-20 md:px-10">
+        <section class="p-6 bg-[var(--Cyan)] text-white space-y-4 md:flex-1 2xl:py-20 sm:py-12 md:px-10">
           <h2 class="text-xl opacity-90 tracking-wide">Monthly Subscription</h2>
           <div>
             <span class="text-3xl font-bold align-middle">&dollar;29</span>
@@ -48,7 +53,7 @@
           <button class="bg-[#c5de56] w-[95%] p-3 shadow-xl rounded-md	">Sign Up</button>
         </section>
 
-        <section class="p-6 bg-[#4abebd] text-white space-y-4 md:flex-1 md:py-20  md:px-10">
+        <section class="p-6 bg-[#4abebd] text-white space-y-4 md:flex-1 2xl:py-20 sm:py-12 md:px-10">
           <h2 class="text-xl font-bold tracking-wide">Why Us</h2>
           <p class="opacity-75 text-sm leading-5 md:leading-6">
             Tutorials by industry experts <br>
